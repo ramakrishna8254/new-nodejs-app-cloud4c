@@ -31,12 +31,23 @@
   "repository": {
     "type": "git",
     "url": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
-  },
+  },  
   "keywords": [
-    "node",
+   "node",
     "Mithun Technologies",
-    "express"
-  ],
+    "express"],
+  "author": "Ramakrishna Suraneni",
+  "license": "RKS",
+  "devDependencies": {
+    "dotenv": "5.0.1",
+    "eslint": "7.11.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "mocha": "8.2.0",
+    "nock": "13.0.4",
+    "nyc": "15.1.0",
+    "sonar-scanner":"3.1.0",
+    "supertest": "3.0.0"
   "author": "Suraneni Ramakrishna",
   "license": "MIT"
 }
