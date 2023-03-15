@@ -1,33 +1,23 @@
 {
   "name": "new-nodejs-app-cloud4c",
   "version": "1.0.0",
-  "description": "This job is to check Codecoverage in sonar",
+  "description": "A MochaJS starter package from https://autom8able.com",
   "main": "src/index.js",
-  "publishConfig": {
-    "regisrty": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
-  },
   "scripts": {
-    "server": "http-server -c-1 -p 9999",
      "test": "mocha",
     "test:awesome": "mocha --reporter mochawesome || true ",
     "open:report": "open mochawesome-report/mochawesome.html",
     "sonar":"sonar-scanner",
     "coverage": "./node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
     "coverage-lcov": "./node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
-    "start": "node src/index.js",
+    "start": "nodemon src/index.js",
     "build": "webpack -p",
     "lint": "./node_modules/.bin/eslint ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
-  },
-  "dependencies": {
-    "express": "^4.16.4"
+
   },
   "keywords": [],
-  "author": "Ramakrishna Suraneni",
-  "license": "RKS",
+  "author": "Mitch Allen (mitchallen.com)",
+  "license": "MIT",
   "devDependencies": {
     "dotenv": "5.0.1",
     "eslint": "7.11.0",
@@ -37,9 +27,7 @@
     "nock": "13.0.4",
     "nyc": "15.1.0",
     "sonar-scanner":"3.1.0",
-    "supertest": "3.0.0",
-     "nodemon": "^1.18.9",
-    "sonarqube-scanner": "^2.7.0"
+    "supertest": "3.0.0"
 
   }
 }
