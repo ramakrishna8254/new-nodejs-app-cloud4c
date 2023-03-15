@@ -1,12 +1,12 @@
 pipeline{
     agent any
   stages{
-    stage("Clone"){
+    stage('Clone'){
         steps{
       git credentialsId: 'GIT_HUB_SRK', url: 'https://github.com/ramakrishna8254/new-nodejs-app-cloud4c.git'
     }
     }
-    stage("Build * Sonar Analysis"){
+    stage('Build * Sonar Analysis'){
 	 steps{
         nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
         	sh "npm install"
@@ -18,7 +18,7 @@ pipeline{
 		sh "npm run sonar"}
 	}
 	 }
-	    stage("UploadArtifactintoNexus"){
+	    stage('UploadArtifactintoNexus'){
 		    steps{
 	    sh "npm publish"
 }
