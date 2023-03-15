@@ -18,7 +18,11 @@ pipeline{
 				sh "npm run sonar"
 			}
 		}
+			stage('RunNodeJSApp'){
+				steps{
+        			sh "nohup npm start &"
 }
 }
 }
 }
+    }
