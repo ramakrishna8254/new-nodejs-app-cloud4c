@@ -32,10 +32,7 @@
     "type": "git",
     "url": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
   },  
-  "keywords": [
-   "node",
-    "Mithun Technologies",
-    "express"],
+  "keywords": [],
   "author": "Ramakrishna Suraneni",
   "license": "RKS",
   "devDependencies": {
@@ -47,7 +44,7 @@
     "nock": "13.0.4",
     "nyc": "15.1.0",
     "sonar-scanner":"3.1.0",
-    "supertest": "3.0.0"
+    "supertest": "3.0.0",
   "author": "Suraneni Ramakrishna",
   "license": "MIT"
 }
