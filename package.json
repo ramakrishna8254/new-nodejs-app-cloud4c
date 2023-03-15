@@ -10,7 +10,8 @@
     "sonar":"sonar-scanner",
     "coverage": "./node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
     "coverage-lcov": "./node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
-    "start": "nodemon src/index.js",
+    "start1": "nodemon src/index.js",
+    "start": "node src/index.js",
     "build": "webpack -p",
     "lint": "./node_modules/.bin/eslint ."
 
