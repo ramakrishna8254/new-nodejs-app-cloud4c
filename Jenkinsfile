@@ -19,8 +19,10 @@ pipeline{
   }
 }
 	    stage('UploadArtifactintoNexus'){
+		    steps{
 	    sh "npm publish"
 }
   }
+}
 }
 }
