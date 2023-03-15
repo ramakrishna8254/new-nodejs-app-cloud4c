@@ -7,10 +7,15 @@
     "regisrty": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
   },
   "scripts": {
-    "server": "http-server -c-1 -p 9999",
-    "start1": "nodemon app.js",
-    "start": "node app.js",
-    "sonar": "node sonar-project.js"
+    "test": "mocha",
+    "test:awesome": "mocha --reporter mochawesome || true ",
+    "open:report": "open mochawesome-report/mochawesome.html",
+    "sonar":"sonar-scanner",
+    "coverage": "./node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
+    "coverage-lcov": "./node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
+    "start": "nodemon src/index.js",
+    "build": "webpack -p",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {    
    "cfenv": "^1.1.0",
