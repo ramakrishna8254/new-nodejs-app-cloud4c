@@ -1,7 +1,7 @@
 {
-  "name": "autom8able-mochajs-starter",
+  "name": "new-nodejs-app-cloud4c",
   "version": "1.0.0",
-  "description": "A MochaJS starter package from https://autom8able.com",
+  "description": "This job is to check Codecoverage in sonar",
   "main": "src/index.js",
   "scripts": {
      "test": "mocha",
