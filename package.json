@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This job is to check Codecoverage in sonar",
   "main": "src/index.js",
+  "publishConfig": {
+    "regisrty": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/"
+  },
   "scripts": {
      "test": "mocha",
     "test:awesome": "mocha --reporter mochawesome || true ",
