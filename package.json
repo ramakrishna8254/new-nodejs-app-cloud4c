@@ -4,7 +4,8 @@
   "description": "A MochaJS starter package from https://autom8able.com",
   "main": "src/index.js",
   "scripts": {
-     "test": "mocha",
+    "server": "http-server -c-1 -p 9999",
+    "test": "mocha",
     "test:awesome": "mocha --reporter mochawesome || true ",
     "open:report": "open mochawesome-report/mochawesome.html",
     "sonar":"sonar-scanner",
