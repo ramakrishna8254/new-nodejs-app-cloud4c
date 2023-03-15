@@ -9,7 +9,10 @@ pipeline{
     stage('Build * Sonar Analysis'){
 	 steps{
         nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
-        sh "npm install"
+        	sh "npm install"
+		withSonarQubeENV('sonarqube-scanner'){
+		sh "npm install sonar-scanner"
+		sh "npm run sonar"}
   }
 }
 }
