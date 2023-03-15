@@ -7,9 +7,11 @@ pipeline{
     }
     }
         stage("Sonarqube analysis"){
+            steps{
             nodejs(nodeJSInstallation: 'nodejs16.19.0'){
                 sh "npm install"
             }
         }
   }
+}
 }
