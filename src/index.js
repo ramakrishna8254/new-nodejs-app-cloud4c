@@ -3,7 +3,7 @@ const app = express()
 const port = 9981
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Cloud4C Technologies Hyderabad......A CTRLS Datacenter Company!')
+  res.send('Helloworld!')
 })
 
 app.listen(port, () => {
