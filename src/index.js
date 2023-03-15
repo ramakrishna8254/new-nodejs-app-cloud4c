@@ -4,4 +4,4 @@ var http = require('http');
 http.createServer(function (req, res) {
   res.write('Welcome to CTRLS Datacenter Pvt Ltd.........AWS DEVOPS WORKING PARTNER.......A CTRLS Datacenter Company Pvt Ltd, Madhapur, Hyderabad, India'); //write a response to the client
   res.end(); //end the response
-}).listen(9981 //the server object listens on port 80
+}).listen(9981) //the server object listens on port 80
