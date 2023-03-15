@@ -16,14 +16,10 @@ pipeline{
 				sh "npm run coverage-lcov"
 				sh "npm install sonar-scanner"
 				sh "npm run sonar"
+				sh "nohup npm start &"
 			}
 		}
-			stage('RunNodeJSApp'){
-				steps{
-        			sh "nohup npm start &"
 }
 }
 }
-}
-    }
 }
