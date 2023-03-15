@@ -4,7 +4,7 @@
   "description": "This job is to check Codecoverage in sonar",
   "main": "src/index.js",
   "publishConfig": {
-    "regisrty": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/"
+    "regisrty": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
   },
   "scripts": {
      "test": "mocha",
@@ -16,11 +16,14 @@
     "start": "nodemon src/index.js",
     "build": "webpack -p",
     "lint": "./node_modules/.bin/eslint ."
-
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://ec2-65-0-109-204.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
   },
   "keywords": [],
-  "author": "Mitch Allen (mitchallen.com)",
-  "license": "MIT",
+  "author": "Ramakrishna Suraneni",
+  "license": "RKS",
   "devDependencies": {
     "dotenv": "5.0.1",
     "eslint": "7.11.0",
