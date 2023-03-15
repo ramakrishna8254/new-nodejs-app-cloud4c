@@ -18,11 +18,6 @@ pipeline{
 		sh "npm run sonar"}
 	}
 	 }
-	    stage("UploadArtifactintoNexus"){
-		    steps{
-	    sh "npm publish"
-}
-  }
 }
 }
 }
